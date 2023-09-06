@@ -2,25 +2,25 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+    In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
 * Explain the purpose of the analysis.
 
-The purpose of this analysis is to identify the creditworthiness of potential loan borrowers. 
+    The purpose of this analysis is to identify the creditworthiness of potential loan borrowers. 
 
 * Explain what financial information the data was on, and what you needed to predict.
 
-The financial information was on loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt. The goal was to predict the loan status, which became the target values. 0 represents a healthy loan and 1 represents a high risk loan that could default. 
+    The financial information was on loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt. The goal was to predict the loan status, which became the target values. 0 represents a healthy loan and 1 represents a high risk loan that could default. 
 
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
 
-There were 75036 healthy loans and 2500 high risk loans in the data set. 
+    There were 75036 healthy loans and 2500 high risk loans in the data set. 
 0    75036
 1     2500
 
 * Describe the stages of the machine learning process you went through as part of this analysis.
 
-After reading in the data from the csv file, I separated the data into y, labels and x, features. Then checked the balance of y to get an idea of how imbalanced the data actually is. I then defined X_train, X_test, y_train, y_test train-test-split, passing in X features and y labels with a random state of 1 to split the data. Following this, I instantiated the Logistic Regression model and fit the model using training data passing in X_train and y_train. Following fitting the model, I defined another variable, prediction, and set it equal to my fit classification model with .predict and passed in the X_test variable. From here I checked the balanced accuracy score passing in the y_test and prediction. With the same data I generated a confusion matrix then printed my results with a classification report. 
+    After reading in the data from the csv file, I separated the data into y, labels and x, features. Then checked the balance of y to get an idea of how imbalanced the data actually is. I then defined X_train, X_test, y_train, y_test train-test-split, passing in X features and y labels with a random state of 1 to split the data. Following this, I instantiated the Logistic Regression model and fit the model using training data passing in X_train and y_train. Following fitting the model, I defined another variable, prediction, and set it equal to my fit classification model with .predict and passed in the X_test variable. From here I checked the balanced accuracy score passing in the y_test and prediction. With the same data I generated a confusion matrix then printed my results with a classification report. 
 
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
