@@ -6,7 +6,7 @@
 
 * Explain the purpose of the analysis.
 
-    The purpose of this analysis is to identify the creditworthiness of potential loan borrowers. 
+    The purpose of this analysis is to identify the creditworthiness of potential loan borrowers. Predicting whether a borrower is likely to repay their loan (healthy loan) or default on it (high-risk loan). In this context, it is more important to predict the '1's accurately.
 
 * Explain what financial information the data was on, and what you needed to predict.
 
